@@ -17,7 +17,7 @@ Pre-requisites can be found [here](bootcamp-pre-requisites/0_README.md). Briefly
 
 - Python Proficiency and familiarity with Azure Machine Learning Workbench's end-end features including deployment.
 
-## AML Packages for Computer Vision and Text Analytics
+## AML Package for Text Analytics
 
 - To download and install the packages, follow the instructions in the [pre-requisites](bootcamp-pre-requisites/0_README.md).
 
