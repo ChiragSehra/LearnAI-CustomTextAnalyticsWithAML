@@ -128,13 +128,15 @@ In a multi-class classification setup, micro-average is preferable if you suspec
 
 ### Exercises
 
-There are several pre-processing steps you can perform to improve your model and also reduce the vocabulary space. For example, you can introduce removal of stop words, stemming, etc.
+There are several pre-processing steps you can perform to improve your model and also reduce the vocabulary space. For example, you can introduce removal of stop words, stemming, etc. The following two lines will exclude stop words:
 
 ```python
 text_classifier.set_step_params_by_name("text1_nltk_preprocessor", remove_stopwords=True)
 
 text_classifier.set_step_params_by_name("text2_nltk_preprocessor", remove_stopwords=True)
 ```
+
+If you did not provide a stop word list, nltk's stop words for english is used by default.
 
 1. Open the word_ngrams_vocabulary file to see if there was a reduction in the vocabulary size.
 
