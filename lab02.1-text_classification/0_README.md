@@ -128,28 +128,30 @@ In a multi-class classification setup, micro-average is preferable if you suspec
 
 ### Exercises
 
-1.There are several pre-processing steps you can perform to improve your model and also reduce the vocabulary space. For example, you can introduce removal of stop words, stemming, etc.
+There are several pre-processing steps you can perform to improve your model and also reduce the vocabulary space. For example, you can introduce removal of stop words, stemming, etc.
 
 ```python
 text_classifier.set_step_params_by_name("text1_nltk_preprocessor", remove_stopwords=True)
 
 text_classifier.set_step_params_by_name("text2_nltk_preprocessor", remove_stopwords=True)
 ```
- Open the word_ngrams_vocabulary file to see if there was a reduction in the vocabulary size.
-1.1   What percentage is the reduction in the vocabulary space?
 
-1.2   Is there an improvement in the f1 score after adding the two pre-processing steps?
+1. Open the word_ngrams_vocabulary file to see if there was a reduction in the vocabulary size.
 
-1.3   You should not see any stop words in the word_ngrams_vocabulary. However, a few stop-words such as "and" have slipped in. Could you explore why?
+    1.1   What percentage is the reduction in the vocabulary space?
+
+    1.2   Is there an improvement in the f1 score after adding the two pre-processing steps?
+
+    1.3   You should not see any stop words in the word_ngrams_vocabulary. However, a few stop-words such as "and" have slipped in. Could you explore why?
     
-_HINT_: Investigate the following lines:
+    _HINT_: Investigate the following lines:
 
-````
-" &quot;The universe is a living being, and it's conscious, and it's very old. And it cares about itself in lots of ways.&quot; Drunvalo Melchizedek."
-    
-"& quot ; the universe living , ' conscious , ' old . and cares lots ways .& quot ; drunvalo melchizedek .",
-````
-2.We built a text classifier using sklearn's simple LogisticRegression. Can you include a decision tree learner now and compare the f1 score with the logistic regression model built earlier?
+
+    _" &quot;The universe is a living being, and it's conscious, and it's very old. And it cares about itself in lots of ways.&quot; Drunvalo Melchizedek."_
+
+    _"& quot ; the universe living , ' conscious , ' old . and cares lots ways .& quot ; drunvalo melchizedek .",_
+
+2. We built a text classifier using sklearn's simple LogisticRegression. Can you include a decision tree learner now and compare the f1 score with the logistic regression model built earlier?
 
     ```python
     from sklearn.tree import DecisionTreeClassifier
