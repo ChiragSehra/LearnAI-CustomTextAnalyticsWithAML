@@ -135,6 +135,7 @@ text_classifier.set_step_params_by_name("text1_nltk_preprocessor", remove_stopwo
 
 text_classifier.set_step_params_by_name("text2_nltk_preprocessor", remove_stopwords=True)
 ```
+
     Open the word_ngrams_vocabulary file to see if there was a reduction in the vocabulary size. 
 
     1.1   What percentage is the reduction in the vocabulary space?
@@ -144,6 +145,7 @@ text_classifier.set_step_params_by_name("text2_nltk_preprocessor", remove_stopwo
     1.3   You should not see any stop words in the word_ngrams_vocabulary. However, a few stop-words such as "and" have slipped in. Could you explore why?
 
     HINT: Investigate the following lines:
+
 ````
     " &quot;The universe is a living being, and it's conscious, and it's very old. And it cares about itself in lots of ways.&quot; Drunvalo Melchizedek."
     
