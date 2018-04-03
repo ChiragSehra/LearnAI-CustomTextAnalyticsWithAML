@@ -140,16 +140,17 @@ text_classifier.set_step_params_by_name("text2_nltk_preprocessor", remove_stopwo
 
     1.1   What percentage is the reduction in the vocabulary space?
 
-    1.2   Is there an improvement in the f1 score after adding the two pre-processing steps?
+    1.2   Is there an improvement in the f1 score after adding removing stop words?
 
     1.3   You should not see any stop words in the word_ngrams_vocabulary. However, a few stop-words such as "and" have slipped in. Could you explore why?
     
     _HINT_: Investigate the following lines:
 
-
     _" &quot;The universe is a living being, and it's conscious, and it's very old. And it cares about itself in lots of ways.&quot; Drunvalo Melchizedek."_
 
     _"& quot ; the universe living , ' conscious , ' old . and cares lots ways .& quot ; drunvalo melchizedek .",_
+
+    1.4   Can you also stem the tokens using _stem_words_ attribute? Is there a bigger reduction in vocabulary size?
 
 2. We built a text classifier using sklearn's simple LogisticRegression. Can you include a decision tree learner now and compare the f1 score with the logistic regression model built earlier?
 
