@@ -50,7 +50,7 @@ Execute the scripts by runing the below command and walk through the code:
 
 ```az ml experiment submit -c local <script>```
 
-For example, to execute ```text_classification_sklearn.py```, run the below command:
+For example, to execute _text_classification_sklearn.py_, run the below command:
 
 ```az ml experiment submit -c local text_classification_sklearn.py```
 
@@ -58,7 +58,7 @@ For example, to execute ```text_classification_sklearn.py```, run the below comm
 
 With TATK's pipeline creation, the user does not have to think of composing transformers manually. By default, the pipeline extracts word n-grams and character n-grams. One can also include a rich set of preprocessors and feature extractors to the pipeline including word2vec/fasttext semantic features or thesari lookup.
 
-The below lines in ```text_classification_sklearn.py``` would create a one-versus-rest LogisticRegression learning algorithm that is used in TextClassifier for model training. 
+The below lines in _text_classification_sklearn.py_ would create a one-versus-rest LogisticRegression learning algorithm that is used in TextClassifier for model training. 
 
 -  njobs=3 in log_reg_learner sets the algorithm to run on 3 threads.
 
@@ -94,7 +94,7 @@ This will display all parameter values such as:
 {'lowercase': True, 'dtype': <class 'numpy.float32'>, 'use_idf': True, 'binary': False, 'input': 'content', 'max_df': 1.0, 'smooth_idf': True, 'input_col': 'NltkPreprocessorfb41531f4098427781f12c99309f6a61', 'tokenizer': None, 'n_hashing_features': None, 'save_overwrite': True, 'vocabulary': None, 'stop_words': None, 'strip_accents': None, 'sublinear_tf': False, 'token_pattern': '(?u)\\b\\w\\w+\\b', 'min_df': 3, 'encoding': 'utf-8', 'norm': None, 'decode_error': 'strict', 'max_features': None, 'ngram_range': (4, 4), 'analyzer': 'char_wb', 'output_col': 'NGramsVectorizer618dec7ba4e14b5099d23132ac2db2e4', 'preprocessor': None, 'hashing': False}
 ```
 
-You can set the parameters using the ```` set_step_params_by_name```` function as follows:
+You can set the parameters using the _set_step_params_by_name_ function as follows:
 
 ```python
     text_classifier.set_step_params_by_name("text1_char_ngrams", ngram_range = (3,4), use_idf = False) 
