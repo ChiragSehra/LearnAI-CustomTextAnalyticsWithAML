@@ -147,7 +147,7 @@ _HINT_: Investigate the following lines:
 ````
     " &quot;The universe is a living being, and it's conscious, and it's very old. And it cares about itself in lots of ways.&quot; Drunvalo Melchizedek."
     
-    *"& quot ; the universe living , ' conscious , ' old . and cares lots ways .& quot ; drunvalo melchizedek .",*
+    "& quot ; the universe living , ' conscious , ' old . and cares lots ways .& quot ; drunvalo melchizedek .",
 ````
 2. We built a text classifier using sklearn's simple LogisticRegression. Can you include a decision tree learner now and compare the f1 score with the logistic regression model built earlier?
 
