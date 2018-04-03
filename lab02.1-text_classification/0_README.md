@@ -83,7 +83,7 @@ The below lines in _text_classification_sklearn.py_ would create a one-versus-re
 
 ### Parameters
 
-To read the parameters of the different pipeline steps, you will need to call ```get_step_params_by_name``` and pass the step name of the pipeline as an argument.
+To read the parameters of the different pipeline steps, you will need to call _get_step_params_by_name_ and pass the step name of the pipeline as an argument.
 
 ```python
 text_classifier.get_step_params_by_name("text1_char_ngrams")
@@ -103,7 +103,7 @@ You can set the parameters using the _set_step_params_by_name_ function as follo
 
 ### Artifacts
 
-The script ```text_classification_sklearn.py``` produces three files:
+The script _text_classification_sklearn.py_ produces three files:
 
 1. ````char_ngrams_vocabulary````: Includes vocabulary of all the character ngrams
 2. ````sk_model````: Includes the pipeline pkl files
@@ -159,4 +159,4 @@ text_classifier.set_step_params_by_name("text2_nltk_preprocessor", remove_stopwo
     text_classifier = TextClassifier(estimator=decision_tree_learner, text_cols = ["text1", "text2"], label_cols = ["label"], numeric_cols = ["random_col"], cat_cols = ["bool_col"], extract_word_ngrams=True, extract_char_ngrams=True)
     ```
     
-    *** Note that the classifier does not have the ```n_job``` attribute that was present in the logistic regression learner.
+    _*** Note_ that the classifier does not have the ```n_job``` attribute that was present in the logistic regression learner.
