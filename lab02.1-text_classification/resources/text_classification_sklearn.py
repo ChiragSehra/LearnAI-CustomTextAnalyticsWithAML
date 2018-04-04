@@ -1,13 +1,15 @@
 # coding: utf-8
 
 # Import Packages 
-
-from azureml.logging import get_azureml_logger
+import os
+import tatk
 import pandas as pd
 import numpy as np
+from azureml.logging import get_azureml_logger
 from tatk.utils import load_newsgroups_data, data_dir, dictionaries_dir, models_dir
 from tatk.feature_extraction import NGramsVectorizer
-import os
+from sklearn.linear_model import LogisticRegression
+from tatk.pipelines.text_classification.text_classifier import TextClassifier
 
 logger = get_azureml_logger()
 
@@ -32,10 +34,6 @@ if __name__ == '__main__':
     # Model training
     # --------------
     # Train a  Scikit-learn text classification model using One-versus-Rest LogisticRegression learning algorithm.
-
-    from sklearn.linear_model import LogisticRegression
-    import tatk
-    from tatk.pipelines.text_classification.text_classifier import TextClassifier
 
     # Define the logistic regression learner
 

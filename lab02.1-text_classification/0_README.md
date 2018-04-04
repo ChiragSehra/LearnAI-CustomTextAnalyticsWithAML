@@ -136,7 +136,7 @@ text_classifier.set_step_params_by_name("text1_nltk_preprocessor", remove_stopwo
 text_classifier.set_step_params_by_name("text2_nltk_preprocessor", remove_stopwords=True)
 ```
 
-If you did not provide a stop word list, nltk's stop words for english is used by default.
+If you did not provide a stop word list, _nltk_'s stop words for english is used by default.
 
 1. Open the word_ngrams_vocabulary file to see if there was a reduction in the vocabulary size.
 

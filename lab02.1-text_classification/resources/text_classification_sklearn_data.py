@@ -1,12 +1,12 @@
-from azureml.logging import get_azureml_logger
-from sklearn.linear_model import LogisticRegression
-import tatk
-from tatk.pipelines.text_classification.text_classifier import TextClassifier
-from tatk.utils import download_blob_from_storage, resources_dir, data_dir
+import os
 import pandas as pd
 import numpy as np
 import math
-import os
+import tatk
+from azureml.logging import get_azureml_logger
+from sklearn.linear_model import LogisticRegression
+from tatk.pipelines.text_classification.text_classifier import TextClassifier
+from tatk.utils import download_blob_from_storage, resources_dir, data_dir
 
 logger = get_azureml_logger()
 
