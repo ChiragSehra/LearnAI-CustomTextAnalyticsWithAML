@@ -1,10 +1,10 @@
 # Custom Embeddings
 
-This hands-on lab demonstrates how you can build custom embeddings with TATK using two state-of-the-art word embedding methods - Word2Vec and fastText.
+This hands-on lab demonstrates how you can build custom embeddings with TATK using two state-of-the-art word embedding methods - word2Vec and fastText.
 
 In this lab, we will:
 - Understand word embeddings and the technique(s) behind getting word representation
-- Train Word2Vec/fastText models and evaluate
+- Train word2Vec/fastText models and evaluate
 - Save and load pipeline for additional training
 - Identify semantically similar terms
 
@@ -13,7 +13,7 @@ In this lab, we will:
 The objectives of this lab are to:
 
 - Understand the concept of word representations for predicting surrounding context
-- Understand the difference between the two embedding methods - Word2Vec and fastText
+- Understand the difference between the two embedding methods - word2Vec and fastText
 - Learn how to create word embedding pipeline, train and evaluate the models
 - Understand how you can identify semantically similar terms using word embeddings
 
@@ -65,7 +65,7 @@ In the two python scripts, the below snippet points to the dataset. Ensure that 
 
 ## Word2Vec model pipeline
 
-The Word2Vec model pipeline can be easily created using Word2VecModel. We can initialize the pipeline using default parameters. In addition, ````detect_sentences = True```` allows for sentence segmentation. For more advanced cleaning tasks, you can also pass regular expressions as an argument to Word2VecModel.
+The word2Vec model pipeline can be easily created using Word2VecModel. We can initialize the pipeline using default parameters. In addition, ````detect_sentences = True```` allows for sentence segmentation. For more advanced cleaning tasks, you can also pass regular expressions as an argument to Word2VecModel.
 
 ````python
     Word2Vec_model = Word2VecModel(input_col = 'Description', regex = None, detect_sentences = True)
@@ -81,7 +81,7 @@ Firstly, a skip gram model identifies every word (i.e. a focus word) in a large 
 
 ## Model and embeddings file
 
-The Word2Vec model and embeddings file can be saved as shown below.
+The word2Vec model and embeddings file can be saved as shown below.
 
 ````python
     pipeline_path = os.path.join(models_dir, 'Word2Vec_model')
