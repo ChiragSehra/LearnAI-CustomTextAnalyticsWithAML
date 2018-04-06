@@ -104,6 +104,17 @@ It is very common to come accross words that did not occur in the training corpu
     vectorizer = Word2VecVectorizer.load_embeddings(embeddings_file_path, include_unk = True, unk_method = 'rnd', unk_vector = None, unk_word = '<UNK>')
 ````
 
+For unk_method, we can have:
+- a random vector ('rnd')
+- mean of all the vocabulary ('mean')
+- vector of all zeros ('zero')
+
+For unk_vector, you can chose to provide your own vector for unknown words.
+                
+For unk_word, it is the string representation for the unknown words.
+
+
+
 ## Embedding Lookup
 
 The toolkit provides an easy way to perform embedding lookup using _most_similar_ function. For example, to look up terms that are semantically similar to the word 'beach', you can call the below line. 
@@ -125,3 +136,9 @@ Note that many of the terms such as 'sandy', 'beaches', 'pebble', 'waters', 'sea
 1. Run the fastText script (hotels_fastText.py) now and observe the semantically similar terms. Are they different from what was obtained using word2Vec?
 
 2. Can you evaluate the quality of the semantic similarity on benchmark datasets such as [WordSimilarity-353](http://www.cs.technion.ac.il/~gabr/resources/data/wordsim353/). This dataset consists of English word pairs along with human-assigned similarity/relatedness judgements. You can use a measure such as Pearson's correlation to measure the quality of the embeddings obtained.
+
+An easy way of getting similarity score between two terms (for example, "beach" and "sand") is as follows:
+
+````python
+vectorizer.embedding_table.similarity("beach", "sand"))
+````
