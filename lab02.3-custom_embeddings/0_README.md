@@ -142,3 +142,5 @@ An easy way of getting similarity score between two terms (for example, "beach" 
 ````python
 vectorizer.embedding_table.similarity("beach", "sand"))
 ````
+
+3. The approach used in this lab works well for word-word similarity. How can we extend this to word-sentence similarity? 
