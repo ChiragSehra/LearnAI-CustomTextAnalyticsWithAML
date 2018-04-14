@@ -1,6 +1,6 @@
 # Entity Extraction
 
-This hands-on lab demonstrates how you can train a custom entity extraction model using TATK.
+This hands-on lab demonstrates how you can train a custom entity extraction model using the AML Package for Text Analytics.
 
 In this lab, we will:
 - Load benchmark biomedical datasets for extracting biomedical entities

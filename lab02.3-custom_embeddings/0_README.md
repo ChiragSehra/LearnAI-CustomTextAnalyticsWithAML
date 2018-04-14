@@ -1,6 +1,6 @@
 # Custom Embeddings
 
-This hands-on lab demonstrates how you can build custom embeddings with TATK using two state-of-the-art word embedding methods - word2Vec and fastText.
+This hands-on lab demonstrates how you can build custom embeddings using the AML Package for Text Analytics. More specifically, the focus of this lab is in demonstrating two state-of-the-art word embedding methods - word2Vec and fastText.
 
 In this lab, we will:
 - Understand word embeddings and the technique(s) behind getting word representation

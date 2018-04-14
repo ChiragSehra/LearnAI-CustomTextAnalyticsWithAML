@@ -1,6 +1,6 @@
 # Data Ingestion and Text Classification
 
-This hands-on lab demonstrates the application of the Azure ML Text Analytics Package for text classification. 
+This hands-on lab demonstrates text classification using the AML Package for Text Analytics. 
 
 In this lab, we will:
 - Build a simple pipeline by using a Scikit Learner and ingest data
