@@ -2,6 +2,8 @@
 
 This hands-on lab demonstrates how you can build custom embeddings using the AML Package for Text Analytics. More specifically, the focus of this lab is in demonstrating two state-of-the-art word embedding methods - word2Vec and fastText.
 
+This lab also introduces the scenario related to information retrieval in the hospitality industry. Typically, when building intelligent search engines and recommendation engines, it's important to capture context. For example, when a user searches for "I'm looking for hotels with spectacular views of the water", the information retrieval system is expected to present results related to hotels near a beach even though the hotels may not describe their properties to explicitly contain the text "spectacular views of the water".
+
 In this lab, we will:
 - Understand word embeddings and the technique(s) behind getting word representation
 - Train word2Vec/fastText models and evaluate
