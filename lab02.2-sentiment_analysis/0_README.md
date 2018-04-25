@@ -103,7 +103,7 @@ Obtaining evaluation metrics is as easy as calling the __evaluate__ function. Fo
 res = keras_text_classifier.evaluate(df_test)
 ````
 
-__plot_confusion_matrix__ function can also be used to generate normalized confusion matrix by setting ````normalize=True````. You will be able to see the normalized cells in the matrix as follows along with the raw matrix at the end of script execution.
+__print_confusion_matrix__ function can also be used to generate normalized confusion matrix by setting ````normalize=True````. You will be able to see the normalized cells in the matrix as follows along with the raw matrix at the end of script execution.
 
 ````
 Confusion matrix

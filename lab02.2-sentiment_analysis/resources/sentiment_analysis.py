@@ -10,7 +10,7 @@ from tatk.utils.load_data import load_imdb_data, download_embedding_model, data_
 from tatk.pipelines.text_classification.keras_text_classifier import KerasTextClassifier
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
-def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'):
+def print_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'):
     """
     This function prints and plots the confusion matrix.
     Normalization can be applied by setting `normalize=True`.
@@ -57,5 +57,5 @@ if __name__ == "__main__":
 
     cnf_matrix = confusion_matrix(y_pred=df_test['prediction'].values, y_true=df_test['sentiment'].values)
     class_labels = ['pos', 'neg']
-    plot_confusion_matrix(cnf_matrix, classes = class_labels, normalize=True,
+    print_confusion_matrix(cnf_matrix, classes = class_labels, normalize=True,
                         title='Normalized confusion matrix')
