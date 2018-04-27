@@ -1,0 +1,12 @@
+azure_subscription: Your Subscription
+env_name: sentienv
+env_location: eastus2
+env_resource_group: sentienvrg
+model_management_account_name: sentmodel
+model_management_account_resource_group: sentienvrg
+model_management_account_location: eastus2
+env_agent_count: 2
+env_agent_vm_size: Standard_D3_v2
+env_master_count: 1
+reuse_storage_and_acr: n
+cluster: cluster
