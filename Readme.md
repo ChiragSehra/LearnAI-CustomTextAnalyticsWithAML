@@ -42,10 +42,10 @@ Pre-requisites can be found [here](bootcamp-pre-requisites/0_README.md). Briefly
 Please note: This is a rough agenda, and the schedule is subject to change pending class activities and interaction.
 
   -  9:00 - 10:00: Introduction and Context
-  - 10:00 - 11:00: [Data Ingestion and Text Classification](lab02.1-text_classification\0_README.md)
-  - 11:00 - 12:00: [Sentiment Analysis using CNNs and pre-trained word2vec model](lab02.2-sentiment_analysis\0_README.md)
+  - 10:00 - 11:00: [Data Ingestion and Text Classification](https://github.com/Azure/LearnAI-CustomTextAnalyticsWithAML/blob/master/lab02.1-text_classification/0_README.md)
+  - 11:00 - 12:00: [Sentiment Analysis using CNNs and pre-trained word2vec model](https://github.com/Azure/LearnAI-CustomTextAnalyticsWithAML/blob/master/lab02.2-sentiment_analysis/0_README.md)
   - 12:00 -  1:00: Lunch
-  -  1:00 -  2:00: [Custom Embeddings (word2Vec and fastText)](lab02.3-custom_embeddings\0_README.md)
-  -  2:00 -  3:00: [Entity Extraction](lab02.4-entity_extraction\0_README.md)
-  -  3:00 -  4:00: [Deployment of pipeline](lab02.5-operationalization\0_README.md)
+  -  1:00 -  2:00: [Custom Embeddings (word2Vec and fastText)](https://github.com/Azure/LearnAI-CustomTextAnalyticsWithAML/blob/master/lab02.3-custom_embeddings/0_README.md)
+  -  2:00 -  3:00: [Entity Extraction](https://github.com/Azure/LearnAI-CustomTextAnalyticsWithAML/blob/master/lab02.4-entity_extraction/0_README.md)
+  -  3:00 -  4:00: [Deployment of pipeline](https://github.com/Azure/LearnAI-CustomTextAnalyticsWithAML/blob/master/lab02.5-operationalization/0_README.md)
   -  4:00 -  5:00: Q&A and Feedback
