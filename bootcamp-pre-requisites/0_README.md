@@ -15,5 +15,5 @@ The following steps will get us up and running for the bootcamp. These activitie
 
 ###  AML Package for Text Analytics
 
-- Go to AML Package for Text Analytics internal Private Preview site located [here](https://microsoft.sharepoint.com/teams/TextAnalyticsPackagePreview/)
-- Follow the [getting started and installation instructions](https://microsoft.sharepoint.com/teams/TextAnalyticsPackagePreview/_layouts/WopiFrame.aspx?sourcedoc=%7BA30A3A83-7843-4AB4-BA72-438086EB68C1%7D&file=Quickstart%20Guide%20AML%20Package%20For%20Text%20Analytics.docx&action=default)
+- Go to [AML Package for Text Analytics](https://docs.microsoft.com/en-us/python/api/overview/azure-machine-learning/textanalytics?view=azure-python)
+- Follow the instructions related to _Install this Package_
